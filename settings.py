@@ -3,10 +3,11 @@ import os
 """
     Основные настройки
     ---------------------------------------------------------------------------------------------"""
+CURRENT_PATH = os.path.dirname(os.path.abspath(__file__))
 # Расположение драйвера для использования Firefox
-GECKODRIVER_PATH = os.path.dirname(os.path.abspath(__file__))
+GECKODRIVER_PATH = CURRENT_PATH
 # Расположение драйвера для использования Chrome
-CHROMEDRIVER_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "chromedriver.exe")
+CHROMEDRIVER_PATH = os.path.join(CURRENT_PATH, "chromedriver.exe")
 
 # Браузеры в которых осуществлять прогон
 BROWSERS = [['chrome'], ['FireFox']]
